@@ -1,0 +1,50 @@
+<!--
+  Generated template for the RegistroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Registro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Nombre</ion-label>
+      <ion-input type="text" #nombre></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Apellidos</ion-label>
+      <ion-input type="text" #apellidos></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Usuario</ion-label>
+      <ion-input type="text" #usuario></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Contraseña</ion-label>
+      <ion-input type="password" #password></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button (click)="registrar()">Entrar</button>
+
+  <button ion-button [navPush]="hom">
+    <ion-icon name="home"></ion-icon>
+    Inicio
+  </button>
+
+
+
+</ion-content>
